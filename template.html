@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <title>template</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            max-width: 756px;
+            margin: auto;
+        }
+
+        .title {
+            font-family: 'Krona One', sans-serif;
+        }
+
+
+
+        .normal {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+        }
+
+        .img_container-pais {
+            width: 130px;
+        }
+
+        .img_container-pais img {
+            width: 100%;
+        }
+
+        .imagen-portada {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .mt-3 {
+            margin-top: 12rem;
+        }
+
+        .page {
+            padding: 1.8rem 2.77rem;
+            border: 1px solid #ccc;
+            height: 822px;
+            margin-top: 2rem;
+        }
+
+        .img_container-logo {
+            width: 250px;
+            margin-right: 1rem;
+        }
+
+        .img_container-logo img {
+            width: 100%;
+        }
+
+        .title-flex {
+            display: flex;
+        }
+
+        .row-flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        .title-text {
+            padding-left: 1.1rem;
+            border-left: 1px solid rgb(231, 231, 231);
+        }
+
+        .title-weight {
+            font-weight: 800;
+            font-size: 2rem;
+            margin-right: .2rem;
+            color: rgb(3, 24, 116);
+        }
+
+        .title-number {
+            color: rgb(63, 63, 63);
+            font-size: 2.2rem;
+        }
+
+        .title-first {
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: rgb(51, 51, 51);
+        }
+
+        .title-subtitle {
+            text-transform: uppercase;
+            font-size: .82rem;
+        }
+
+        .portada-flex-end {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 17rem;
+        }
+
+        .portada-flex-end img {
+            width: 66px;
+        }
+
+        .portada_footer-text {
+            width: max-content;
+            font-size: .56rem;
+            padding: 0 .7rem;
+            border-left: 1px solid #ccc;
+        }
+
+        .portada_footer-text span {
+            display: block;
+            line-height: 15px;
+            color: #515151;
+        }
+
+        .page-marker {
+            position: relative;
+        }
+
+        .marker-container {
+            width: 350px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .marker {
+            position: relative;
+            text-align: right;
+            padding: .88rem 1.7rem;
+            background: rgb(2, 30, 124);
+            color: rgb(218, 218, 218);
+            font-size: 12px;
+        }
+
+        .marker::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            content: '';
+            width: 99px;
+            background-color: rgb(24, 130, 236);
+        }
+
+        .content {
+            margin-top: 6rem;
+        }
+
+        .page1-header {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+    <div class="container">
+        <div class="portada page">
+            <div class="row imagen-portada">
+                <div class="img_container-pais">
+                    <img src="./assets/img/francia-pais.jpg" alt="imagen de francia">
+                </div>
+            </div>
+            <div class="row mt-3 row-flex">
+                <div class="img_container-logo row-item">
+                    <img src="./assets/img/kalstein.jpg" alt="logo kalstein">
+                </div>
+                <div class="normal row-item title-text">
+                    <p class="title-first">Cotización</p>
+                    <div>
+                        <span class="title title-weight">QUO</span><span class="title-number">135</span>
+                    </div>
+                    <span class="title-subtitle">Un acompañamiento diferente, a su servicio</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portada-flex-end">
+                    <img src="./assets/img/kalstein-logo-transparent.jpg" alt="marca de kalstein transparente">
+                    <div class="portada_footer-text">
+                        <span>All rights reserved ® KALSTEIN France S. A. S.,</span>
+                        <span>2 Rue Jean Lantier • 75001 Paris •</span>
+                        <span>+33 1 78 95 87 89 / +33 6 80 76 07 10 • </span>
+                        <span>https://kalstein.eu</span>
+                        <span>KALSTEIN FRANCE, S. A. S</span>
+                    </div>
+                    <img src="./assets/img/qr.jpg" alt="codigo qr">
+                </div>
+            </div>
+        </div>
+        <div class="pagina1 page page-marker">
+            <div class="marker-container">
+                <div class="marker">pagina 1 de 5</div>
+            </div>
+            <div class="content">
+                <div class="row page1-header">
+                    <div class="img_container-logo page1-header-logo">
+                        <img src="./assets/img/kalstein.jpg" alt="logo de kalstein">
+                    </div>
+                    <div class="page1-header-text">
+                        <span>Nuestros servicios</span>
+                        <h3>Beneficios y Respaldo</h3>
+                        <span>En Kalstein France, nos ocupamos de la plena satisfacción de nuestros clientes, es por eso
+                            que brindamos servicios de
+                            valor agregado del más alto nivel basados en nuestra experiencia.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagina2 page page-marker">
+            <div class="marker-container">
+                <div class="marker">pagina 2 de 5</div>
+            </div>
+        </div>
+        <div class="pagina3 page page-marker">
+            <div class="marker-container">
+                <div class="marker">pagina 3 de 5</div>
+            </div>
+        </div>
+        <div class="pagina4 page page-marker">
+            <div class="marker-container">
+                <div class="marker">pagina 4 de 5</div>
+            </div>
+        </div>
+        <div class="pagina5 page page-marker">
+            <div class="marker-container">
+                <div class="marker">pagina 5 de 5</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
