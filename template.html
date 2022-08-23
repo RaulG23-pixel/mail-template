@@ -14,167 +14,250 @@
         rel="stylesheet">
     <title>template</title>
 </head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+
+    .container {
+        max-width: 756px;
+        margin: auto;
+    }
+
+    .title {
+        font-family: 'Krona One', sans-serif;
+    }
+
+
+    .img_container-pais {
+        width: 130px;
+    }
+
+    .img_container-pais img {
+        width: 100%;
+    }
+
+    .imagen-portada {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mt-3 {
+        margin-top: 12rem;
+    }
+
+    .page {
+        padding: 1.8rem 2.77rem;
+        border: 1px solid rgb(17, 17, 17);
+        height: 920px;
+        margin-top: 2rem;
+    }
+    .page.page-alt{
+        padding: 1.8rem 0;
+        padding-left: 2rem;
+    }
+
+    .img_container-logo {
+        width: 250px;
+        margin-right: 1rem;
+    }
+
+    .img_container-logo img {
+        width: 100%;
+    }
+
+    .title-flex {
+        display: flex;
+    }
+
+    .row-flex-center {
+        display: flex;
+        justify-content: center;
+    }
+    .row-flex{
+        display:flex;
+    }
+    .title-text {
+        padding-left: 1.1rem;
+        border-left: 1px solid rgb(231, 231, 231);
+    }
+
+    .title-weight {
+        font-weight: 800;
+        font-size: 2rem;
+        margin-right: .2rem;
+        color: rgb(3, 24, 116);
+    }
+
+    .title-number {
+        color: rgb(63, 63, 63);
+        font-size: 2.2rem;
+    }
+
+    .title-first {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: rgb(51, 51, 51);
+    }
+
+    .title-subtitle {
+        text-transform: uppercase;
+        font-size: .82rem;
+    }
+
+    .portada-flex-end {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20rem;
+    }
+
+    .portada-flex-end img {
+        width: 66px;
+    }
+
+    .portada_footer-text {
+        width: max-content;
+        font-size: .56rem;
+        padding: 0 .7rem;
+        border-left: 1px solid #ccc;
+    }
+
+    .portada_footer-text span {
+        display: block;
+        line-height: 15px;
+        color: #515151;
+    }
+
+    .page-marker {
+        position: relative;
+    }
+
+    .marker-container {
+        width: 350px;
+        position: absolute;
+        
+    }
+    .marker-1{
+        top: 0;
+        right: 0;
+    }
+    .marker-2{
+        bottom:0;
+        right: 0;
+    }
+
+    .marker {
+        position: relative;
+        text-align: right;
+        padding: .88rem 1.7rem;
+        background: rgb(2, 30, 124);
+        color: rgb(218, 218, 218);
+        font-size: 12px;
+    }
+
+    .marker::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        content: '';
+        width: 99px;
+        background-color: rgb(24, 130, 236);
+    }
+
+    .content {
+        margin-top: 3.2rem;
+    }
+
+    .page1-header {
+        display: flex;
+        align-items: center;
+    }
+    .page1-header .page1-header-logo {
+        flex: 0 0 calc(31%);
+        margin-left: 1rem;
+    }
+    .page1-header-text{
+        border-left: 1px solid #ccc;
+        padding-left: .7rem;
+        padding-right: 2rem;
+    }
+    .page1-header-text h3{
+        color:rgb(3, 24, 95);
+        margin-bottom: 3px;
+        margin-top: 6px;
+    }
+    .page1-header-text span{
+        font-size: 12px;
+    }
+    .icon_container{
+        width: 70px;
+        padding: .78rem;
+    }
+    .icon_container img{
+        width: 100%;
+    }
+    .item{
+        display:flex;
+        margin-top: 3.5rem;
+        align-items: center;
+    }
+    .item.row-2{
+        margin-top: 2rem;
+    }
+    .item.row-3{
+        margin-top:1rem;
+    }
+    .item-description{
+        padding: 0.4rem 0 0 .5rem;
+        border-left: 1px solid #ccc;
+        flex: 1;
+    }
+    .item-description h4{
+        font-size: .74rem;
+        color:rgb(1, 42, 105);
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .item-description p{
+        font-size: .7034rem;
+        line-height: 16px;
+        color: rgb(0, 0, 0);
+        font-weight:400;
+        width:89%;
+    }
+    .row-page-1{
+        margin-top: 1.4rem;
+        max-height: 188px;
+        margin-bottom: 2.3rem;
+    }
+    .row-page-items .column-img{
+        width: 35%;
+    }
+    .row-page-items .column-text{
+        width: 33%;
+    }
+    .img-container-column{
+        width:100%;
+        height:100%;
+    }
+    .img-container-column img{
+        width: 100%;
+        height:100%;
+    }
+    .row{
+        width: 100%;
+    }
+
+</style>
 
 <body>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .container {
-            max-width: 756px;
-            margin: auto;
-        }
-
-        .title {
-            font-family: 'Krona One', sans-serif;
-        }
-
-
-
-        .normal {
-            font-family: 'Barlow Semi Condensed', sans-serif;
-        }
-
-        .img_container-pais {
-            width: 130px;
-        }
-
-        .img_container-pais img {
-            width: 100%;
-        }
-
-        .imagen-portada {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .mt-3 {
-            margin-top: 12rem;
-        }
-
-        .page {
-            padding: 1.8rem 2.77rem;
-            border: 1px solid #ccc;
-            height: 822px;
-            margin-top: 2rem;
-        }
-
-        .img_container-logo {
-            width: 250px;
-            margin-right: 1rem;
-        }
-
-        .img_container-logo img {
-            width: 100%;
-        }
-
-        .title-flex {
-            display: flex;
-        }
-
-        .row-flex {
-            display: flex;
-            justify-content: center;
-        }
-
-        .title-text {
-            padding-left: 1.1rem;
-            border-left: 1px solid rgb(231, 231, 231);
-        }
-
-        .title-weight {
-            font-weight: 800;
-            font-size: 2rem;
-            margin-right: .2rem;
-            color: rgb(3, 24, 116);
-        }
-
-        .title-number {
-            color: rgb(63, 63, 63);
-            font-size: 2.2rem;
-        }
-
-        .title-first {
-            font-size: 1rem;
-            text-transform: uppercase;
-            color: rgb(51, 51, 51);
-        }
-
-        .title-subtitle {
-            text-transform: uppercase;
-            font-size: .82rem;
-        }
-
-        .portada-flex-end {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 17rem;
-        }
-
-        .portada-flex-end img {
-            width: 66px;
-        }
-
-        .portada_footer-text {
-            width: max-content;
-            font-size: .56rem;
-            padding: 0 .7rem;
-            border-left: 1px solid #ccc;
-        }
-
-        .portada_footer-text span {
-            display: block;
-            line-height: 15px;
-            color: #515151;
-        }
-
-        .page-marker {
-            position: relative;
-        }
-
-        .marker-container {
-            width: 350px;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        .marker {
-            position: relative;
-            text-align: right;
-            padding: .88rem 1.7rem;
-            background: rgb(2, 30, 124);
-            color: rgb(218, 218, 218);
-            font-size: 12px;
-        }
-
-        .marker::after {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            content: '';
-            width: 99px;
-            background-color: rgb(24, 130, 236);
-        }
-
-        .content {
-            margin-top: 6rem;
-        }
-
-        .page1-header {
-            display: flex;
-            align-items: center;
-        }
-    </style>
-
     <div class="container">
         <div class="portada page">
             <div class="row imagen-portada">
@@ -182,7 +265,7 @@
                     <img src="./assets/img/francia-pais.jpg" alt="imagen de francia">
                 </div>
             </div>
-            <div class="row mt-3 row-flex">
+            <div class="row mt-3 row-flex-center">
                 <div class="img_container-logo row-item">
                     <img src="./assets/img/kalstein.jpg" alt="logo kalstein">
                 </div>
@@ -208,8 +291,11 @@
                 </div>
             </div>
         </div>
-        <div class="pagina1 page page-marker">
-            <div class="marker-container">
+        <div class="pagina1 page page-marker page-alt">
+            <div class="marker-container marker-1">
+                <div class="marker">pagina 1 de 5</div>
+            </div>
+            <div class="marker-container marker-2">
                 <div class="marker">pagina 1 de 5</div>
             </div>
             <div class="content">
@@ -226,25 +312,112 @@
                         </span>
                     </div>
                 </div>
+                <div class="row row-flex row-page-1 row-page-items">
+                    <div class="column-text">
+                        <div class="item">
+                            <div class="icon_container">
+                                <img src="./assets/img/icono1.png" alt="icono 1">
+                            </div>
+                            <div class="item-description">
+                                <h4>Inducciones y entrenamiento online</h4>
+                                <p>En cualquier parte del mundo, reciba su inducción o capacitación de nuestro equipo especializado de ingenieros</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-text">
+                        <div class="item">
+                            <div class="icon_container">
+                                <img src="./assets/img/icono2.png" alt="icono 1">
+                            </div>
+                            <div class="item-description">
+                                <h4>Rápida Respuesta</h4>
+                                <p>Nuestro equipo de trabajo siempre está disponible para responder a todas sus consultas o preguntas, con el fin de ayudarlo en cualquier situación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-img">
+                        <div class="img-container-column">
+                            <img src="./assets/img/imagen1.jpg" alt="imagen 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-flex row-page-1 row-page-items">
+                    <div class="column-text">
+                        <div class="item row-2">
+                            <div class="icon_container">
+                                <img src="./assets/img/icono3.png" alt="icono 1">
+                            </div>
+                            <div class="item-description">
+                                <h4>Inducciones y entrenamiento online</h4>
+                                <p>En cualquier parte del mundo, reciba su inducción o capacitación de nuestro equipo especializado de ingenieros</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-text">
+                        <div class="item row-2">
+                            <div class="icon_container">
+                                <img src="./assets/img/icono4.png" alt="icono 1">
+                            </div>
+                            <div class="item-description">
+                                <h4>Rápida Respuesta</h4>
+                                <p>Nuestro equipo de trabajo siempre está disponible para responder a todas sus consultas o preguntas, con el fin de ayudarlo en cualquier situación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-img">
+                        <div class="img-container-column">
+                            <img src="./assets/img/imagen2.jpg" alt="imagen 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-flex row-page-1 row-page-items">
+                    <div class="column-text">
+                        <div class="item row-3">
+                            <div class="icon_container">
+                                <img src="./assets/img/icono5.png" alt="icono 1">
+                            </div>
+                            <div class="item-description">
+                                <h4>Inducciones y entrenamiento online</h4>
+                                <p>En cualquier parte del mundo, reciba su inducción o capacitación de nuestro equipo especializado de ingenieros</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-text">
+                        <div class="item row-3">
+                            <div class="icon_container">
+                                <img src="./assets/img/icono6.png" alt="icono 1">
+                            </div>
+                            <div class="item-description">
+                                <h4>Rápida Respuesta</h4>
+                                <p>Nuestro equipo de trabajo siempre está disponible para responder a todas sus consultas o preguntas, con el fin de ayudarlo en cualquier situación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-img">
+                        <div class="img-container-column">
+                            <img src="./assets/img/imagen3.jpg" alt="imagen 1">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="pagina2 page page-marker">
-            <div class="marker-container">
+            <div class="marker-container marker-1">
                 <div class="marker">pagina 2 de 5</div>
             </div>
         </div>
         <div class="pagina3 page page-marker">
-            <div class="marker-container">
+            <div class="marker-container marker-1">
                 <div class="marker">pagina 3 de 5</div>
             </div>
         </div>
         <div class="pagina4 page page-marker">
-            <div class="marker-container">
+            <div class="marker-container marker-1">
                 <div class="marker">pagina 4 de 5</div>
             </div>
         </div>
         <div class="pagina5 page page-marker">
-            <div class="marker-container">
+            <div class="marker-container marker-1">
                 <div class="marker">pagina 5 de 5</div>
             </div>
         </div>
