@@ -255,6 +255,18 @@
     .row{
         width: 100%;
     }
+    /*PAGE 2*/
+    /*Header*/
+    .page.pagina2{
+        padding-bottom: 0;
+        position:relative;
+    }
+    .page2-marker{
+        font-size: 10px;
+        position: absolute;
+        bottom: 35px;
+        right: 65px;
+    }
     .page2-header{
         display:flex;
     }
@@ -300,8 +312,10 @@
         display:block;
         font-size: 12px;
     }
+    /*TABLE*/
     .page2-table{
         margin-top: 23px;
+        position: relative;
     }
     table{
         width: 100%;
@@ -318,7 +332,7 @@
     }
     .table-body td{
         text-align: center;
-        font-size: 11.4px;
+        font-size: 10.25px;
         line-height: 23px;
         vertical-align: top;
         text-align: left;
@@ -354,8 +368,32 @@
         width: 80px;
         text-align: center;
     }
+
+    .page-results{
+        position: absolute;
+        bottom:-121px;
+        right: 0;
+        width: 170px;
+        text-align: right;
+        font-size: 11.5px;
+    }
+    .page-results::after{
+        content: '';
+        clear:both;
+        display:table;
+    }
+    .page-results > div {
+        display:inline-block;
+        width: 50%;
+        float:left;
+    }
+    .results-column-title > *, .results-column-value > *{
+        display:block;
+        line-height: 20px;
+    }
+    /*LOGISTICA*/
     .datos-logistica{
-        margin-top: 20px;
+        margin-top: 14px;
         font-size: 10px;
     }
     
@@ -369,13 +407,140 @@
         vertical-align: top;
     }
     .value-fields{
-        margin-left: 80px;
+        margin-left: 60px;
         width: 170px;
     }
     .value-fields > * {
         display:block;
     }
-
+    .row-observaciones:nth-child(1) .tiempos-entrega-value{
+        vertical-align: bottom;
+    }
+    .row-observaciones:nth-child(3) .value-fields{
+        margin-left: 68px;
+    }
+    .row-observaciones:nth-child(4) .value-fields{
+        margin-left: 119px;
+    }
+    .row-observaciones:nth-child(5) .value-fields{
+        margin-left: 124px;
+    }
+    .row-observaciones:nth-child(6) .value-fields{
+        margin-left: 121px;
+    }
+    .row-observaciones:nth-child(7) .value-fields{
+        margin-left: 100px;
+    }
+    .page2-footer-top::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .page2-footer-top > div{
+        width: 50%;
+        float: left;
+    }
+    .footer-top-icon{
+        width: 40px;
+    }
+    .footer-top-icon img{
+        width: 100%;
+    }
+    .footer-top-content{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .footer-top-content .footer-top-icon{
+        width: 15%;
+        float: left;
+    }
+    .footer-top-content .footer-top-text{
+        width: 78%;
+        margin-left: 10px;
+        margin-top: 5px;
+        float: left;
+    }
+    .footer-bottom-content p {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 9px;
+        margin-top: 12px;
+        width: 160px;
+    }
+    /*PAGE 3*/
+    .page.pagina3{
+        padding-right: 0;
+    }
+    .page3-header{
+        margin-top: 33px;
+    }
+    .page3-header::after{
+        content: '';
+        clear:both;
+        display:table;
+    }
+    .page3-header-logo{
+        width: 210px;
+        margin-right: 12px;
+        float:left;
+    }
+    .page3-header-logo img{
+        width: 100%;
+    }
+    .page3-header-title{
+        float:left;
+        vertical-align: bottom;
+        line-height: 68px;
+        font-size: 20px;
+        padding-left: 18px;
+        border-left: 1px solid rgb(226, 226, 226);
+        color:rgb(1, 42, 105);
+        text-transform: uppercase;
+    }
+    .page3-content::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .page3-content > div{
+        float:left;
+    }
+    .page3-content-column-1{
+        width: 63%;
+    }
+    .page3-content-column-2{
+        width: 37%;
+        padding-top: 22px;
+    }
+    .page3-text-title{
+        font-size: 12px;
+        color: rgb(7, 26, 134);
+        font-weight: bold;
+        margin-top: 14px;
+    }
+    .text-title-first{
+        margin-top: 24px;
+    }
+    .page3-row-content ul{
+        width: 85%;
+        margin-left: 17px;
+        margin-top: 10px;
+    }
+    .page3-row-content li{
+        font-size: 11px;
+        line-height: 15px;
+        margin-bottom: 6px;
+    }
+    .page3-row-content span{
+        font-size: 11px;
+    }
+    .column-2-img-container{
+        width: 262px;
+        margin-bottom: 20px;
+    }
+    .column-2-img-container img{
+        width:100%;
+    }
 </style>
 
 <body>
@@ -592,6 +757,25 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="page-results">
+                    <div class="results-column-title">
+                        <span>Subtotal</span>
+                        <span>IVA</span>
+                        <span>Descuento</span>
+                        <span>Subtotal</span>
+                        <span>Envio</span>
+                        <span>Total</span>
+                    </div>
+                    <div class="results-column-value">
+                        <span>54.872,00</span>
+                        <span>0,00</span>
+                        <span>9.876,96</span>
+                        <span>44.995,04</span>
+                        <span>0,00</span>
+                        <span>44.995,04</span>
+
+                    </div>
+                </div>
             </div>
             <div class="datos-logistica">
                 <div class="row-observaciones">
@@ -643,10 +827,136 @@
                 </div>    
                 
             </div>
+                <div class="page2-footer">
+                    <div class="page2-footer-top">
+                        <div class="footer-top-content">
+                            <div class="footer-top-icon">
+                                <img src="./assets/img/img-ce.jpg" alt="icono3">
+                            </div>
+                            <div class="footer-top-text">
+                                <p><b>Marcado CE: para comprar con tranquilidad</b></p>
+                                <p>Todos los equipos de Kalstein cumplen con los requisitos de la UE, de acuerdo con las regulaciones pertinentes</p>
+                            </div>
+                        </div>
+                        <div class="footer-top-content">
+                            <div class="footer-top-icon">
+                                <img src="./assets/img/icono3.png" alt="icono3">
+                            </div>
+                            <div class="footer-top-text">
+                                <p><b>Con la adquision de un equipo Kalstein</b></p>
+                                <p>usted hace una contribucion a la Fundacion Jacinto Convit, OneTreePlanted, Humatem Foundation y la Fundacion Maniapure.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="page2-footer-bottom">
+                        <div class="footer-bottom-content">
+                            <p class="bottom-content-p">
+                                KALSTEIN FRANCE S.A.S• 2 Rue Jean Lantier, • 75001 Paris •+33 1 78 95 87 89 / +33 6 80 76 07 10 • https://kalstein.eu
+                            </p>
+                            <span class="bottom-content-span"></span>
+                        </div>
+                    </div>
+                <div class="page2-footer-bottom"></div>
+            </div>
+            <div class="page2-marker">pagina 3 de 5</div>
         </div>
         <div class="pagina3 page page-marker">
             <div class="marker-container marker-1">
-                <div class="marker">pagina 3 de 5</div>
+                <div class="marker"></div>
+            </div>
+            <div class="row">
+                <div class="page3-header">
+                    <div class="page3-header-logo">
+                        <img src="./assets/img/kalstein.jpg" alt="logo de kalstein">
+                    </div>
+                    <h2 class="page3-header-title">condiciones comerciales</h2>
+                </div>
+                <div class="row page3-content">
+                    <div class="page3-content-column-1">
+                        <div class="page3-row-content">
+                            <p class="page3-text-title text-title-first">ACEPTACION DE ORDEN DE COMPRA</p>
+                            <ul>
+                                <li>Kalstein France SAS recibe a satisfacción la orden de compra,
+                                     cuando este documentoexpresa fielmente las condiciones comerciales establecidas en la ofert
+                                </li>
+                                <li>Pagos de contado: Para el trámite y despacho de la mercancía solicitada,
+                                     es requerida lacomprobación de pago en cuentas bancarias de Kalstein France</li>
+                                <li> Clientes con Crédito: Para tramitar y despachar la mercancía solicitada,
+                                     requiere comprobación de cupo asignado y no estar en mora con Kalstein France.</li>
+                            </ul>
+                        </div>
+                        <div class="page3-row-content">
+                            <p class="page3-text-title">MONEDA DE NEGOCIACION</p>
+                            <ul>
+                                <li>
+                                    Ofertas en moneda extranjera, se realizará el cálculo de conversión de moneda
+                                     de acuerdo alo establecido por el Banco de Francia, fijado el día de la facturación
+                                </li>
+                                <li>
+                                    La moneda de negociacion establecida para la presente cotizacion es EUR.
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="page3-row-content">
+                            <p class="page3-text-title">GARANTIA</p>
+                            <ul>
+                                <li>
+                                    Todos los equipos comercializados por Kalstein France, tienen garantía de un año pordefectos
+                                     de fabricación a partir de la fecha de la facturacion de la mercancía.
+                                </li>
+                                <li>
+                                    La garantía no cubre daños causados por mala instalación u operacion,
+                                     defectos portransporte o por usos diferentes a los especificados por el fabricante.
+                                </li>
+                                <li> La garantia excluye partes electricas o consumibles.</li>
+                            </ul>
+                        </div>
+                        <div class="page3-row-content">
+                            <p class="page3-text-title">TIEMPOS DE ENTREGA</p>
+                            <ul>
+                                <li>
+                                    Los tiempos de entrega indicados en esta cotizacion son estimaciones sujetas a variables.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="page3-row-content">
+                            <p class="page3-text-title">CANCELACIONES Y DEVOLUCIONES SIN JUSTA CAUSA</p>
+                            <ul>
+                                <li>
+                                    Mercancía en inventario, tendrá una penalización equivalente al 20% del valor de la orden decompra.
+                                </li>
+                                <li>
+                                    Mercancía de Importación, después de recibida la orden de compra a satisfacción se disponede un máximo de (3) días para la
+                                     cancelación de la orden de compra, pasado este tiempo nose aceptan cancelaciones y la mercancía será facturada conforme a lo establecido.
+                                </li>
+                                <li>
+                                    La devolución de la mercancía será responsabilidad del Cliente, la caja, envoltorios y todaslas partes que conforman el equipo a devolver, deberán estar en perfectas condiciones sinmaltrato, rayas y etiquetas adicionales, el equipo de Soporte técnico y logística de KalsteinFrance, realizará informe técnico e indicará el recibo a satisfacción de la mercancía.
+                                     De noser recibida a satisfacción se facturará el equipo conforme a lo establecido en la Orden decompra.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="page3-row-content">
+                            <p class="page3-text-title">POLÍTICAS, TÉRMINOS Y CONDICIONES GENERALES:</p>
+                            <span>https://kalstein.eu/p12/Terms-and-Conditions/pages.html</span>
+                        </div>
+                    </div>
+                    <div class="page3-content-column-2">
+                        <div class="column-2-img-container">
+                            <img src="./assets/img/imagen1.jpg" alt="imagen de muestra 1">
+                        </div>
+                        <div class="column-2-img-container">
+                            <img src="./assets/img/imagen2.jpg" alt="imagen de muestra 1">
+                        </div>
+                        <div class="column-2-img-container">
+                            <img src="./assets/img/imagen3.jpg" alt="imagen de muestra 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="marker-container marker-2">
+                <div class="marker">pagina 4 de 7</div>
             </div>
         </div>
         <div class="pagina4 page page-marker">
