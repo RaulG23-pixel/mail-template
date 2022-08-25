@@ -151,7 +151,16 @@
         bottom:0;
         right: 0;
     }
-
+    .marker-3{
+        bottom:0;
+        left:0;
+        padding: 15px;
+        text-align: center;
+    }
+    .marker-3 span{
+        font-size: 9px;
+        display:block;
+    }
     .marker {
         position: relative;
         text-align: right;
@@ -541,6 +550,72 @@
     .column-2-img-container img{
         width:100%;
     }
+    /*PAGINA4*/
+    .page.pagina4{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .page4__header{
+        margin-top: 43px;
+        color: rgb(31,49,134);
+    }
+    .page4__header::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .page4__header > div{
+        float: left;
+        width: 33.3%;
+        height: 240px;        
+    }
+    .logo-container img{
+        width: 187px;
+        margin-top: 78px;
+        margin-left: 32px;
+    }
+    .img-header4 img{
+        width: 252px;
+        height: 100%;
+    }
+    .page4__header .text-container{
+        border-left: 1px solid rgb(233, 233, 233);
+        padding-left: 20px;
+    }
+    .page4__header .text-container h2{
+        color: rgb(1, 31, 129);
+        text-transform: uppercase;
+        margin-top: 18px;
+    }
+    .page4__header .text-container span{
+        font-size: 12.9px;
+    }
+    .page4__header .text-container span{
+        display:block;
+        font-size: 11.20px;
+    }
+    .contact-data-container{
+        margin-top: 20px;
+    }
+    .contact-data-container span{
+        line-height: 16px;
+    }
+    .sede{
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .row.banner{
+        height: 500px;
+        margin-top: 20px;
+    }
+    .row.banner .img-container{
+        width: 100%;
+        height: 100%;
+    }
+    .row.banner .img-container img{
+        width: 100%;
+        height: 100%;
+    }
 </style>
 
 <body>
@@ -582,7 +657,7 @@
                 <div class="marker"></div>
             </div>
             <div class="marker-container marker-2">
-                <div class="marker">pagina 1 de 5</div>
+                <div class="marker">pagina 2 de 5</div>
             </div>
             <div class="content">
                 <div class="row page1-header">
@@ -956,17 +1031,49 @@
                 </div>
             </div>
             <div class="marker-container marker-2">
-                <div class="marker">pagina 4 de 7</div>
+                <div class="marker">pagina 4 de 5</div>
             </div>
         </div>
         <div class="pagina4 page page-marker">
             <div class="marker-container marker-1">
-                <div class="marker">pagina 4 de 5</div>
+                <div class="marker"></div>
             </div>
-        </div>
-        <div class="pagina5 page page-marker">
-            <div class="marker-container marker-1">
+            <div class="marker-container marker-2">
                 <div class="marker">pagina 5 de 5</div>
+            </div>
+            <div class="marker-container marker-3">
+                <span>KALSTEIN FRANCE S.A.S</span>
+                <span>• 2 Rue Jean Lantier, • 75001 Paris •</span>
+                <span>+33 1 78 95 87 89 / +33 6 80 76 07 10 • https://kalstein.eu</span>
+            </div>
+            <div class="page4__content">
+                <div class="row page4__header">
+                    <div class="logo-container">
+                        <img src="./assets/img/kalstein.jpg" alt="logo de kalstein">
+                    </div>
+                    <div class="text-container">
+                        <h2>Alguna duda?</h2>
+                        <span>Contactanos</span>
+                        <div class="contact-data-container">
+                            <span>PARIS - FRANCE</span>
+                            <span class="sede">SEDE</span>
+                            <span>2 Rue Jean Lantier</span>
+                            <span>Paris - France.</span>
+                            <span><b>Fax</b>: +33 (0) 1 78 95 87 89</span>
+                            <span><b>Tlf</b>: +33 (0) 6 80 76 07 10s</span>
+                            <span>10sales@kalstein.eu</span>
+                            <span><b>https</b>://<b>kalstein</b>.<b>net</b>/</span>
+                        </div>
+                    </div>
+                    <div class="img-header4">
+                        <img src="./assets/img/imagen4.jpg" alt="imagen4">
+                    </div>
+                </div>
+                <div class="row banner">
+                    <div class="img-container">
+                        <img src="./assets/img/imagen5.jpg" alt="banner de presentacion">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
